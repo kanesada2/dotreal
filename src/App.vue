@@ -16,4 +16,7 @@ export default {
 </script>
 
 <style>
+video{
+  max-width: fit-content;
+}
 </style>
