@@ -18,7 +18,7 @@ export default {
       const container = document.getElementById('container');
       const mindarThree = new MindARThree({
         container: container,
-        imageTargetSrc: "/targets.mind"
+        imageTargetSrc: "./targets.mind"
       });
       const { renderer, scene, camera } = mindarThree;
 
@@ -30,12 +30,12 @@ export default {
 
       const loader = new GLTFLoader();
       const tomato = await new Promise((resolve) => {
-        loader.load("/models/tomato.glb", (gltf) => {
+        loader.load("./models/tomato.glb", (gltf) => {
           resolve(gltf);
         });
       });
       const pione = await new Promise((resolve) => {
-        loader.load("/models/pione.glb", (gltf) => {
+        loader.load("./models/pione.glb", (gltf) => {
           resolve(gltf);
         });
       });
