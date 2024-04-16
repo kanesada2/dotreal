@@ -18,6 +18,7 @@ export default {
       const container = document.getElementById('container');
       const mindarThree = new MindARThree({
         container: container,
+        maxTrack: 2,
         imageTargetSrc: "./targets.mind"
       });
       const { renderer, scene, camera } = mindarThree;
